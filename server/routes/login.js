@@ -65,7 +65,7 @@ async function verify(token) {
     const payload = ticket.getPayload(); //payload: es el objeto con todos los datos del usuario de google
 
     return {
-        nombre: payload.nombre,
+        nombre: payload.name,
         email: payload.email,
         img: payload.picture,
         google: true
